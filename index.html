@@ -1,156 +1,116 @@
-<!doctype html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2026 Sunumu</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1 class="title">2026</h1>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blockade — Support</title>
+  <meta name="description" content="Support for Blockade (7x7), an abstract strategy board game for iOS.">
+  <style>
+    :root {
+      --bg: #0f0f12;
+      --surface: #1a1a20;
+      --text: #e8e8ec;
+      --muted: #9898a4;
+      --link: #6eb5ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.02em;
+    }
+    .tagline { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: var(--text);
+    }
+    p { margin: 0 0 1rem; color: #c8c8d0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin: 1rem 0;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    ul { margin: 0 0 1rem; padding-left: 1.25rem; color: #c8c8d0; }
+    li { margin-bottom: 0.35rem; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .lang-note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 2rem;
+      padding: 1rem;
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Blockade</h1>
+    <p class="tagline">7x7 abstract strategy · iOS</p>
 
-      <div class="content">
-        <div class="calendar">
-          <div class="calendar-header">
-            <p>Neler Yaptım?</p>
-          </div>
-          <div class="numbers-grid">
-            <button class="number-btn" data-number="1">1</button>
-            <button class="number-btn" data-number="2">2</button>
-            <button class="number-btn" data-number="3">3</button>
-            <button class="number-btn" data-number="4">4</button>
-            <button class="number-btn" data-number="5">5</button>
-            <button class="number-btn" data-number="6">6</button>
-            <button class="number-btn" data-number="7">7</button>
-            <button class="number-btn" data-number="8">8</button>
-            <button class="number-btn" data-number="9">9</button>
-            <button class="number-btn" data-number="10">10</button>
-            <button class="number-btn" data-number="11">11</button>
-            <button class="number-btn" data-number="12">12</button>
-            <button class="number-btn" data-number="13">13</button>
-            <button class="number-btn" data-number="14">14</button>
-            <button class="number-btn" data-number="15">15</button>
-            <button class="number-btn" data-number="16">16</button>
-            <button class="number-btn" data-number="17">17</button>
-            <button class="number-btn" data-number="18">18</button>
-            <button class="number-btn" data-number="19">19</button>
-            <button class="number-btn" data-number="20">20</button>
-            <button class="number-btn" data-number="21">21</button>
-            <button class="number-btn" data-number="22">22</button>
-            <button class="number-btn" data-number="23">23</button>
-            <button class="number-btn" data-number="24">24</button>
-            <button class="number-btn" data-number="25">25</button>
-          </div>
-        </div>
-
-        <div class="swipe-section">
-          <div class="swipe-stack" id="swipe-stack">
-
-            <div class="swipe-card" data-index="0">
-              <div class="card-browser-bar">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-url">project-alpha.dev</span>
-              </div>
-              <div class="card-image-area">
-                <img src="https://picsum.photos/seed/proj1/400/240" alt="Proje 1" />
-              </div>
-              <div class="card-label">Proje Alpha — Arayüz Tasarımı</div>
-            </div>
-
-            <div class="swipe-card" data-index="1">
-              <div class="card-browser-bar">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-url">dashboard.internal</span>
-              </div>
-              <div class="card-image-area">
-                <img src="https://picsum.photos/seed/proj2/400/240" alt="Proje 2" />
-              </div>
-              <div class="card-label">Dashboard — Analitik Paneli</div>
-            </div>
-
-            <div class="swipe-card" data-index="2">
-              <div class="card-browser-bar">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-url">mobile.app</span>
-              </div>
-              <div class="card-image-area">
-                <img src="https://picsum.photos/seed/proj3/400/240" alt="Proje 3" />
-              </div>
-              <div class="card-label">Mobil Uygulama — v2.0</div>
-            </div>
-
-            <div class="swipe-card" data-index="3">
-              <div class="card-browser-bar">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-url">api.platform.io</span>
-              </div>
-              <div class="card-image-area">
-                <img src="https://picsum.photos/seed/proj4/400/240" alt="Proje 4" />
-              </div>
-              <div class="card-label">API Platformu — Entegrasyon</div>
-            </div>
-
-            <div class="swipe-card" data-index="4">
-              <div class="card-browser-bar">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-url">design.system</span>
-              </div>
-              <div class="card-image-area">
-                <img src="https://picsum.photos/seed/proj5/400/240" alt="Proje 5" />
-              </div>
-              <div class="card-label">Tasarım Sistemi — Bileşenler</div>
-            </div>
-
-            <div class="swipe-card" data-index="5">
-              <div class="card-browser-bar">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-url">reporting.hub</span>
-              </div>
-              <div class="card-image-area">
-                <img src="https://picsum.photos/seed/proj6/400/240" alt="Proje 6" />
-              </div>
-              <div class="card-label">Raporlama Merkezi</div>
-            </div>
-
-          </div>
-          <div class="swipe-hint">Sağa kaydırın →</div>
-        </div>
-      </div>
-
-      <div class="rockets" id="rocket-zone">
-        <span class="rocket" data-index="0"><img src="turkcell.png" alt="turkcell" /></span>
-        <span class="rocket" data-index="1"><img src="turkcell.png" alt="turkcell" /></span>
-        <span class="rocket" data-index="2"><img src="turkcell.png" alt="turkcell" /></span>
-        <span class="rocket" data-index="3"><img src="turkcell.png" alt="turkcell" /></span>
-        <span class="rocket" data-index="4"><img src="turkcell.png" alt="turkcell" /></span>
-      </div>
+    <div class="card">
+      <p><strong>Developer:</strong> Yasin Ercan Ozdemir</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Yercan" rel="noopener">github.com/Yercan</a></p>
     </div>
 
-    <!-- Modal/Popup -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="modal-title">Başlık</h2>
-        <p id="modal-text">İçerik</p>
-      </div>
-    </div>
+    <h2>Contact</h2>
+    <p>For questions, feedback, or bug reports about Blockade, please contact via GitHub profile:</p>
+    <ul>
+      <li><a href="https://github.com/Yercan" rel="noopener">https://github.com/Yercan</a></li>
+    </ul>
+    <p class="lang-note">
+      <strong>Turkce:</strong> Destek talepleri icin GitHub profilim uzerinden veya App Store uzerinden uygulama sayfasindaki "Gelistirici Web Sitesi / Destek" baglantilariyla iletisime gecebilirsiniz.
+    </p>
 
-    <div class="character-runner" id="character"></div>
-    <script src="script.js"></script>
-  </body>
+    <h2>Frequently asked questions</h2>
+    <p><strong>What is Blockade?</strong><br>
+    Blockade is a two-player abstract strategy game on a 7x7 board. Each turn you move your pawn and place a block. The player who cannot move loses.</p>
+    <p><strong>Do I need an internet connection?</strong><br>
+    No. Blockade works fully offline.</p>
+    <p><strong>Game modes</strong><br>
+    You can play against the AI or with another person on the same device (pass-and-play).</p>
+    <p><strong>Languages</strong><br>
+    The app supports multiple interface languages. Change language in Settings inside the app.</p>
+
+    <h2>Privacy</h2>
+    <p>Blockade does not require an account. Gameplay is local to your device.</p>
+
+    <h2>System requirements</h2>
+    <ul>
+      <li>iOS 15.6 or later</li>
+      <li>iPhone and iPad</li>
+    </ul>
+
+    <footer>
+      <p>&copy; Yasin Ercan Ozdemir · Blockade</p>
+      <p>This page is provided for App Store Support URL requirements.</p>
+    </footer>
+  </div>
+</body>
 </html>
